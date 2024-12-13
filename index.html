@@ -1,46 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>我的网站</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>我的视频网站</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>欢迎来到我的个人网站</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">关于我</a></li>
-                <li><a href="#skills">技能</a></li>
-                <li><a href="#contact">联系我</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <section id="about">
-        <h2>关于我</h2>
-        <p>你好，我是[豪]，一名热爱技术和设计的开发者。我专注于[前端/后端/全栈开发]，并致力于用代码解决问题。</p>
-    </section>
-    
-    <section id="skills">
-        <h2>我的技能</h2>
-        <ul>
-            <li>HTML / CSS / JavaScript</li>
-            <li>React / Vue / Angular</li>
-            <li>Node.js / Python / Java</li>
-            <li>数据库：MySQL / MongoDB</li>
-        </ul>
-    </section>
-    
-    <section id="contact">
-        <h2>联系我</h2>
-        <p>邮箱：<a href="mailto:your-email@example.com">2637861191@qq.com</a></p>
-        <p>GitHub：<a href="https://github.com/your-github" target="_blank">github.com/your-github</a></p>
-    </section>
-    
-    <footer>
-        <p>© 2024 [豪]. 保留所有权利。</p>
-    </footer>
+
+  <!-- 导航栏 -->
+  <header class="navbar">
+    <div class="logo">
+      <a href="#">视频网站</a>
+    </div>
+    <nav class="nav-links">
+      <a href="#">首页</a>
+      <a href="#">热门</a>
+      <a href="#">分类</a>
+      <a href="#">登录</a>
+    </nav>
+  </header>
+
+  <!-- 视频展示区域 -->
+  <div class="main-video">
+    <h1>精选视频</h1>
+    <div class="video-player">
+      <video controls width="800">
+        <source src="video.mp4" type="video/mp4">
+        您的浏览器不支持视频标签。
+      </video>
+    </div>
+  </div>
+
+  <!-- 视频列表 -->
+  <div class="video-list">
+    <h2>热门视频</h2>
+    <div class="video-item">
+      <img src="thumbnail1.jpg" alt="视频缩略图">
+      <div class="video-info">
+        <h3>视频标题 1</h3>
+        <p>视频描述内容，这里是关于视频的简短介绍。</p>
+      </div>
+    </div>
+    <div class="video-item">
+      <img src="thumbnail2.jpg" alt="视频缩略图">
+      <div class="video-info">
+        <h3>视频标题 2</h3>
+        <p>视频描述内容，这里是关于视频的简短介绍。</p>
+      </div>
+    </div>
+    <div class="video-item">
+      <img src="thumbnail3.jpg" alt="视频缩略图">
+      <div class="video-info">
+        <h3>视频标题 3</h3>
+        <p>视频描述内容，这里是关于视频的简短介绍。</p>
+      </div>
+    </div>
+    <!-- 更多视频项 -->
+  </div>
+
+  <!-- 页脚 -->
+  <footer>
+    <p>&copy; 2024 我的视频网站. 保留所有权利.</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
